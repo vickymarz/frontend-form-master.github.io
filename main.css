@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../frontendmentor04/Poppings/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../frontendmentor04/Poppings/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins Semi-Bold";
+  src: url(../frontendmentor04/Poppings/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../frontendmentor04/Poppings/Poppins-Bold.ttf);
+}
+*,
+* ::before,
+* ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Poppins-Regular;
+}
+
+body {
+  background: url(../frontendmentor04/images/bg-intro-mobile.png) center no-repeat fixed;
+  background-size: cover;
+  background-color: #ff7a7a;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-box, .form-section .free-trial {
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px #0000001a;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-direction: column;
+}
+
+section {
+  flex: 50%;
+}
+section h1 {
+  color: White;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Poppins-Bold;
+  padding: 5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+section p {
+  color: #f7f0f0;
+  font-size: 0.8rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.form-section {
+  flex: 50%;
+  margin-top: 4rem;
+}
+.form-section .free-trial {
+  background-color: #6055a5;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.form-section .free-trial p {
+  width: 70%;
+  margin: 0 auto;
+  color: #f7f0f0;
+}
+.form-section .free-trial p span {
+  font-weight: 600;
+  font-family: Poppins Semi-Bold;
+}
+
+.form-box {
+  background-color: #ffffff;
+  padding: 1.5rem 0;
+  margin-bottom: 4rem;
+}
+.form-box .box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-box .box input {
+  outline: none;
+  border: 1.5px solid #f7f0f0;
+  border-radius: 0.3rem;
+  height: 4rem;
+  width: 100%;
+  padding: 0 1em;
+}
+.form-box .box input:focus {
+  border: 1.2px solid #3e3c49;
+}
+.form-box .box input::placeholder {
+  color: #00000085;
+  font-size: 1rem;
+  font-family: Poppins-Bold;
+  font-weight: 700;
+}
+.form-box .box span {
+  position: absolute;
+  right: 0.5em;
+  top: 20%;
+}
+.form-box .box .icon {
+  flex: 20%;
+  color: #ff7a7a;
+  padding-left: 1rem;
+}
+.form-box button {
+  border-radius: 0.3rem;
+  height: 3.5rem;
+  width: 100%;
+  text-align: center;
+  color: #f7f0f0;
+  background-color: #38cc8c;
+  font-size: 1rem;
+  font-family: Poppins Semi-Bold;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 3px #20ac6f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.form-box p {
+  color: #cdcae3;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: Poppins Semi-Bold;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.form-box p span {
+  color: #ff7a7a;
+}
+
+label {
+  color: #ff7a7a;
+  font-size: 0.8rem;
+  float: right;
+  border: none;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background: url(../frontendmentor04/images/bg-intro-desktop.png) center no-repeat fixed;
+    background-size: cover;
+    background-color: #ff7a7a;
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  section h1 {
+    text-align: initial;
+    font-family: Poppins-Bold;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  section p {
+    text-align: initial;
+  }
+
+  .form-box {
+    padding-top: 2rem;
+  }
+  .form-box .box {
+    height: 3rem;
+  }
+  .form-box button {
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  .form-box .icon {
+    font-size: 1rem;
+  }
+  .form-box .icon span {
+    position: absolute;
+    right: 0.8em;
+    top: 25%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

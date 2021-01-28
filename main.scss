@@ -1,0 +1,235 @@
+// global variables starts here
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url(../frontendmentor04/Poppings/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url(../frontendmentor04/Poppings/Poppins-Medium.ttf);
+}
+@font-face {
+	font-family: 'Poppins Semi-Bold';
+	src: url(../frontendmentor04/Poppings/Poppins-SemiBold.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url(../frontendmentor04/Poppings/Poppins-Bold.ttf);
+}
+// colors
+// primary
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+// accent
+$Blue: hsl(248, 32%, 49%);
+// neutral
+$Green-Bold: hsl(154, 69%, 40%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(247, 31%, 84%);
+$Gray-White: rgb(247, 240, 240);
+
+// fonts
+$font-family: 'Poppins', sans-serif;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$font-size: 16px;
+
+// global styling starts here
+*,
+* ::before,
+* ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: $font-family;
+	font-weight: $weight-regular;
+	font-size: $font-size;
+	font-family: Poppins-Regular;
+}
+body {
+	background: url(../frontendmentor04/images/bg-intro-mobile.png) center
+		no-repeat fixed;
+	background-size: cover;
+	background-color: $Red;
+}
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+// global styling ends here
+
+// styling by extension/inheritance
+%border-shadow {
+	border-radius: 0.5rem;
+	box-shadow: 0px 7px #0000001a;
+}
+%flex-align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// styling by extension ends here
+
+.container {
+	@extend %flex-align;
+	flex-direction: column;
+}
+section {
+	flex: 50%;
+	h1 {
+		color: White;
+		font-size: 1.5rem;
+		font-weight: $weight-bold;
+		font-family: Poppins-Bold;
+		padding: 5rem 1rem 2rem 1rem;
+		text-align: center;
+	}
+	p {
+		color: $Gray-White;
+		font-size: 0.8rem;
+		text-align: center;
+		word-wrap: break-word;
+	}
+}
+.form-section {
+	flex: 50%;
+	margin-top: 4rem;
+	.free-trial {
+		background-color: $Blue;
+		text-align: center;
+		padding: 1rem;
+		font-size: 0.8rem;
+		margin-bottom: 1.5rem;
+		@extend %border-shadow;
+		p {
+			width: 70%;
+			margin: 0 auto;
+			color: $Gray-White;
+			span {
+				font-weight: $weight-semi-bold;
+				font-family: Poppins Semi-Bold;
+			}
+		}
+	}
+}
+.form-box {
+	background-color: #ffffff;
+	padding: 1.5rem 0;
+	margin-bottom: 4rem;
+	@extend %border-shadow;
+	.box {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		input {
+			outline: none;
+			border: 1.5px solid $Gray-White;
+			border-radius: 0.3rem;
+			height: 4rem;
+			width: 100%;
+			padding: 0 1em;
+		}
+		input:focus {
+			border: 1.2px solid $Dark-Blue;
+		}
+		input::placeholder {
+			color: #00000085;
+			font-size: 1rem;
+
+			font-family: Poppins-Bold;
+			font-weight: $weight-bold;
+		}
+		span {
+			position: absolute;
+			right: 0.5em;
+			top: 20%;
+		}
+		.icon {
+			flex: 20%;
+			color: $Red;
+			padding-left: 1rem;
+		}
+	}
+
+	button {
+		border-radius: 0.3rem;
+		height: 3.5rem;
+		width: 100%;
+		text-align: center;
+		color: $Gray-White;
+		background-color: $Green;
+		font-size: 1rem;
+		font-family: Poppins Semi-Bold;
+		outline: none;
+		border: none;
+		box-shadow: 0 4px 3px $Green-Bold;
+		margin-bottom: 1rem;
+		font-weight: $weight-semi-bold;
+	}
+	p {
+		color: $Grayish-Blue;
+		font-size: 0.8rem;
+		text-align: center;
+		font-family: Poppins Semi-Bold;
+		font-weight: $weight-semi-bold;
+		padding-bottom: 1rem;
+		span {
+			color: $Red;
+		}
+	}
+}
+label {
+	color: $Red;
+	font-size: 0.8rem;
+	float: right;
+	border: none;
+}
+
+// media query
+@media only screen and (min-width: 700px) {
+	body {
+		background: url(../frontendmentor04/images/bg-intro-desktop.png) center
+			no-repeat fixed;
+		background-size: cover;
+		background-color: $Red;
+	}
+	.container {
+		flex-direction: row;
+		max-width: 900px;
+		margin: 0 auto;
+		margin-top: 3rem;
+	}
+	section {
+		h1 {
+			text-align: initial;
+			font-family: Poppins-Bold;
+			font-weight: $weight-bold;
+			font-size: 2rem;
+		}
+		p {
+			text-align: initial;
+		}
+	}
+	.form-box {
+		padding-top: 2rem;
+		.box {
+			height: 3rem;
+		}
+		button {
+			height: 3rem;
+			font-size: 0.8rem;
+		}
+		.icon {
+			font-size: 1rem;
+			span {
+				position: absolute;
+				right: 0.8em;
+				top: 25%;
+			}
+		}
+	}
+}

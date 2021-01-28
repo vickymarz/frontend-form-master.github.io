@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontendmentor | Intro Component With Sign-Up</title>
+		<!-- document title icon -->
+		<link
+			rel="shortcut icon"
+			href="../frontendmentor04/images/favicon-32x32.png"
+			type="image/png"
+		/>
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="../frontendmentor04/main.css" />
+		<link rel="stylesheet" href="main.css" />
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- font awwesome -->
+		<link
+			rel="stylesheet"
+			href="../frontendmentor04/fontawesome-free-5.14.0-web/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<div class="wrapper">
+					<h1>Learn to code by watching others</h1>
+					<p>
+						See how experienced developers solve problems in real-time. Watching
+						scripted tutorials is great, but understanding how developers think
+						is invaluable.
+					</p>
+				</div>
+			</section>
+			<div class="form-section">
+				<div class="wrapper">
+					<div class="free-trial">
+						<p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+					</div>
+					<form onsubmit="return validate()">
+						<div class="form-box">
+							<div class="wrapper">
+								<div class="box">
+									<input
+										type="text"
+										name="first-name"
+										id="first-name"
+										placeholder="First Name"
+									/>
+									<div class="icon" style="display: none" id="iconOne">
+										<span class="fas fa-exclamation-circle fa-2x icon"></span>
+									</div>
+								</div>
+								<label for="first-name" id="first" style="display: none"
+									>First Name cannot be empty</label
+								>
+								<br />
+								<div class="box">
+									<input
+										type="text"
+										name="last-name"
+										id="last-name"
+										placeholder="Last Name"
+									/>
+									<div class="icon" style="display: none" id="iconTwo">
+										<span class="fas fa-exclamation-circle fa-2x icon"></span>
+									</div>
+								</div>
+								<label for="last-name" id="lastName" style="display: none"
+									>Last Name cannot be empty</label
+								><br />
+								<div class="box" id="three">
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder="Email Address"
+									/>
+									<div class="icon" style="display: none" id="iconThree">
+										<span class="fas fa-exclamation-circle fa-2x icon"></span>
+									</div>
+								</div>
+								<label for="email" style="display: none" id="mail"
+									>Looks like this is not an email</label
+								>
+								<br />
+								<div class="box">
+									<input
+										type="password"
+										name="password"
+										id="password"
+										placeholder="Password"
+									/>
+									<div class="icon" style="display: none" id="iconFour">
+										<span class="fas fa-exclamation-circle fa-2x icon"></span>
+									</div>
+								</div>
+								<label for="password" style="display: none" id="pass-word"
+									>Password cannot be empty</label
+								>
+								<br />
+								<button type="submit" id="submit">CLAIM YOUR FREE TRIAL</button>
+
+								<p>
+									By clicking the button, you are agreeing to our
+									<span>Terms and Services</span>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../frontendmentor04/index.js"></script>
+</html>
