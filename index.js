@@ -30,7 +30,8 @@ const validate = event => {
 		email.style.display = 'block';
 		iconThree.style.display = 'block';
 		thirdInput.style.border = 'solid 2px hsl(0, 100%, 74%)';
-                thirdInput.placeholder = 'email@example/com
+                thirdInput.placeholder = 'email@example/com';
+                thirdInput.classList.add('place-holder');
 		return false;
 	} else if (fourthInput.value.trim() == '' || null) {
 		passWord.style.display = 'block';
