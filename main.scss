@@ -163,6 +163,9 @@ label {
 	float: right;
 	border: none;
 }
+.place-holder::placeholder {
+         color:hsl(0, 100%, 74%);
+}
 
 // media query
 @media only screen and (min-width: 700px) {
