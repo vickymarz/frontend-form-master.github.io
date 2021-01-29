@@ -49,15 +49,18 @@ function myFunction() {
   firstInput.style.border = '2px solid green';
   iconOne.style.display = 'none';
   firstName.style.display = 'none';
-
+}
+function myFunctionTwo() {
   secondInput.style.border = '2px solid green';
   iconTwo.style.display = 'none';
   lastName.style.display = 'none';
-
+}
+function myFunctionThree() {
   thirdInput.style.border = '2px solid green';
   iconThree.style.display = 'none';
   email.style.display = 'none';
-  
+}
+function myFunctionFour() {
   fourthInput.style.border = '2px solid green';
   iconFour.style.display = 'none';
   passWord.style.display = 'none';
