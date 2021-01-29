@@ -48,14 +48,18 @@ const validate = event => {
 function myFunction() {
   firstInput.style.border = '2px solid green';
   iconOne.style.display = 'none';
+  firstName.style.display = 'none';
 
   secondInput.style.border = '2px solid green';
   iconTwo.style.display = 'none';
+  lastName.style.display = 'none';
 
   thirdInput.style.border = '2px solid green';
   iconThree.style.display = 'none';
+  email.style.display = 'none';
   
   fourthInput.style.border = '2px solid green';
   iconFour.style.display = 'none';
+  passWord.style.display = 'none';
 }
 
