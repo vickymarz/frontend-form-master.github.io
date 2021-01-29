@@ -1,5 +1,4 @@
-const validate = event => {
-	var firstInput = document.getElementById('first-name');
+        var firstInput = document.getElementById('first-name');
 	var firstName = document.getElementById('first');
 	var iconOne = document.getElementById('iconOne');
 
@@ -16,6 +15,8 @@ const validate = event => {
 	var passWord = document.getElementById('pass-word');
 	var iconFour = document.getElementById('iconFour');
 
+
+const validate = event => {
 	if (firstInput.value.trim() == '' || null) {
 		firstName.style.display = 'block';
 		iconOne.style.display = 'block';
@@ -43,3 +44,7 @@ const validate = event => {
 		return true;
 	}
 };
+
+function myFunction() {
+  firstInput.style.border = '2px solid green';
+}
